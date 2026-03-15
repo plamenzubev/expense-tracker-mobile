@@ -50,4 +50,9 @@ export const deleteExpense = async (id: number) => {
   await client.delete(`/expenses/${id}/`);
 };
 
+export const getCategories = async () => {
+  const response = await client.get('/categories/');
+  return response.data;
+};
+
 export default client;
