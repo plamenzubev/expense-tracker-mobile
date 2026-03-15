@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
-const API_URL = 'http://192.168.1.4:8000/api'; // Ще сменим с твоето IP
+const API_URL = 'https://expense-tracker-api-w29w.onrender.com/api';
 
 const client = axios.create({
   baseURL: API_URL,
@@ -10,7 +10,6 @@ const client = axios.create({
   },
 });
 
-// Автоматично добавя токена към всяка заявка
 client.interceptors.request.use(async (config) => {
   const token = await SecureStore.getItemAsync('access_token');
   if (token) {
