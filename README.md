@@ -3,7 +3,9 @@
 A cross-platform iOS & Android expense tracking app built with React Native and Expo.
 
 ## 📸 Screenshots
-Coming soon
+![Home Screen](screenshots/home.png)
+![Add Expense](screenshots/modal.png)
+![Login](screenshots/login.png)
 
 ## 🛠️ Tech Stack
 - React Native
